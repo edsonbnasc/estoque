@@ -4,7 +4,7 @@ public class Principal {
     public static void main(String[] args) {
         String produto = "Teclado Mecânico";
         int quantidade = 50;
-        int opcao;
+        int opcao=0;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Produto: " + produto);
@@ -33,7 +33,7 @@ public class Principal {
                 }
             } else if (opcao == 4) {
                 System.out.print("Novo nome do produto: ");
-                scanner.nextLine(); // Limpar o buffer
+                scanner.nextLine();
                 produto = scanner.nextLine();
             } else if (opcao == 5) {
                 System.out.println("Saindo do programa.");
